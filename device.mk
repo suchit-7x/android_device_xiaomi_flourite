@@ -6,6 +6,9 @@
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
